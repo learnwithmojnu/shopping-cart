@@ -8,4 +8,4 @@
 - Core JavaScript
 
 ### Live: 
-- [https://learnwithmojnu.github.io](https://learnwithmojnu.github.io)
+- [https://learnwithmojnu.github.io/shopping-cart](https://learnwithmojnu.github.io/shopping-cart)
