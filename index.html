@@ -12,13 +12,12 @@
 </head>
 
 <body>
-
    <section>
       <div class="container">
-         <h2>My shopping cart</h2>
+         <h2 class="text-center mt-5">My shopping cart</h2>
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
+               <div class="cart-item cart-item-1">
                   <div class="row">
                      <div class="col-md-7 center-item">
                         <img src="images/product-1.png" alt="">
@@ -27,36 +26,36 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" id="minusButton"><i class="fas fa-minus"></i></button>
+                           <input type="number" min="0" class="form-control text-center" value="1" id="iPhone11">
+                           <button class="btn btn-default" id="plusButton"><i class="fas fa-plus"></i></button>
                         </div>
-                        <h5>$1219</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <h5>$<span id="iphone11-price">1219</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item remove-item-1">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item cart-item-2">
                   <div class="row">
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
-                        <h5>iPhone 11 Silicone Case - Black</h5>
+                        <h5>iPhone 12 Silicone Case - Black</h5>
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default"><i class="fas fa-minus" id="minusButton12"></i></button>
+                           <input type="number" min="0" class="form-control text-center" value="1" id="iPhone12">
+                           <button class="btn btn-default" id="plusButton12"><i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$59</h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <h5>$<span id="iphone12-price">59</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item remove-item-2">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item cart-item-3">
                   <div class="row">
 
                      <div class="col-md-8">
@@ -66,9 +65,9 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$<span id="subtotal">1278</span></h5>
+                        <h5>$<span id="tax">64</span></h5>
+                        <h5>$<span id="grandTotal">1342</span></h5>
                      </div>
                   </div>
                </div>
@@ -79,6 +78,7 @@
          </div>
       </div>
    </section>
+   <script src="./app.js"></script>
 </body>
 
 </html>
